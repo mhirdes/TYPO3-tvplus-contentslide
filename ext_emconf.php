@@ -9,7 +9,7 @@
  * 'author_email' => 'kraftb@think-open.at',
  * *************************************************************
  */
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
     'title' => 'TemplaVoilà Plus: Content Slide',
     'description' => 'This extension allows you to inherit the content of a TemplaVoilaPlus content element column to its child pages - Adaption of EXT:kb_tv_cont_slide to work with templavoilaplus',
     'category' => 'plugin',
@@ -21,13 +21,12 @@ $EM_CONF[$_EXTKEY] = array(
     'author' => 'Schuler, J. Peter M.',
     'author_email' => 'j.peter.m.schuler@uni-due.de',
     'author_company' => '',
-    'constraints' => array(
-        'depends' => array(
-            'php' => '5.2.0-0.0.0',
-            'typo3' => '6.2.0-7.6.99'
-        ),
-        'conflicts' => array(),
-        'suggests' => array()
-    )
-);
+    'constraints' => [
+        'depends' => [
+            'typo3' => '8.7.0-8.7.99'
+        ],
+        'conflicts' => [],
+        'suggests' => []
+    ]
+];
 
